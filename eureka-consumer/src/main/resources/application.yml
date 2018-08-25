@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: spring-eureka-consumer
+server:
+  port: 9090
+eureka:
+    client:
+      serviceUrl:
+        defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
